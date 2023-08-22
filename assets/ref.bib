@@ -1,0 +1,61 @@
+@software{deprl,
+  author = {P. Schumacher},
+  title = {deprl: A collection of RL algorithms for musculoskeletal control.},
+  url = {https://github.com/martius-lab/depRL},
+  date = {2023},
+}
+
+
+@inproceedings{schumacher2023deprl,
+	title={{DEP}-{RL}: Embodied Exploration for Reinforcement Learning in Overactuated and Musculoskeletal Systems},
+	author={Pierre Schumacher and Daniel Haeufle and Dieter B{\"u}chler and Syn Schmitt and Georg Martius},
+	booktitle={The Eleventh International Conference on Learning Representations },
+	year={2023},
+	url={https://openreview.net/forum?id=C-xa_D3oTj6},
+	file={schumacher2023deprl.pdf},
+	abstract={Muscle-actuated organisms are capable of learning an unparalleled diversity of dexterous movements despite their vast amount of muscles. 
+Reinforcement learning (RL) on large musculoskeletal models, however, has not been able to show similar performance.  
+We conjecture that ineffective exploration in large overactuated action spaces is a key problem.
+This is supported by the finding that common exploration noise strategies are inadequate in synthetic examples of overactuated systems. 
+We identify differential extrinsic plasticity (DEP), a method from the domain of self-organization, as being able to induce state-space covering exploration within seconds of interaction. 
+By integrating DEP into RL, we achieve fast learning of reaching and locomotion in musculoskeletal systems, outperforming current approaches in all considered tasks in sample efficiency and robustness.},
+}
+
+@inproceedings{wochner2022learning,
+	title={Learning with Muscles: Benefits for Data-Efficiency and Robustness in Anthropomorphic Tasks},
+	author={Isabell Wochner and Pierre Schumacher and Georg Martius and Dieter B{\"u}chler and Syn Schmitt and Daniel Haeufle},
+	booktitle={6th Annual Conference on Robot Learning},
+	year={2022},
+	file={wochner2022learning.pdf},
+	url={https://openreview.net/forum?id=Xo3eOibXCQ8},
+	abstract={Humans are able to outperform robots in terms of robustness, versatility, and learning of new tasks in a wide variety of movements. We hypothesize that highly nonlinear muscle dynamics play a large role in providing inherent stability, which is favorable to learning. While recent advances have been made in applying modern learning techniques to muscle-actuated systems both in simulation as well as in robotics, so far, no detailed analysis has been performed to show the benefits of muscles in this setting. Our study closes this gap by investigating core robotics challenges and comparing the performance of different actuator morphologies in terms of data-efficiency, hyperparameter sensitivity, and robustness.}
+
+}
+
+@incollection{iclr2023,
+    author = {Pierre Schumacher},
+    title = {{DEP}-{RL}: Embodied Exploration for Reinforcement Learning in Overactuated and Musculoskeletal Systems}},
+    note = {ICLR-2023},
+    year = {2023},
+}
+
+@misc{schneider2023,
+    Author = {Jan Schneider and Pierre Schumacher and Daniel F. B. Haeufle and Bernhard Schölkopf and Dieter Büchler},
+    Title = {Investigating the Impact of Action Representations in Policy Gradient Algorithms},
+    file = {schneider2023.pdf},
+    note={Workshop on effective Representations, Abstractions, and Priors for Robot Learning (RAP4Robots) at ICRA 2023},
+    abstract={Reinforcement learning (RL) is a versatile framework for learning to solve complex real-world tasks. However, influences on the learning performance of RL algorithms are often poorly understood in practice. We discuss different analysis techniques and assess their effectiveness for investigating the impact of action representations in RL. Our experiments demonstrate that the action representation can significantly influence the learning performance on popular RL benchmark tasks. The analysis results indicate that some of the performance differences can be attributed to changes in the complexity of the optimization landscape. Finally, we discuss open challenges of analysis techniques for RL algorithms.},
+}
+
+@unpublished{schumacher2023walking,
+	author = {Schumacher, Pierre and Geijtenbeek, Thomas and Caggiano, Vittorio and Schmitt, Syn and Martius, Georg and Häufle, Daniel},
+	year = {2023},
+	month = {08},
+	pages = {},
+	title = {Natural and Robust Walking using Reinforcement Learning without Demonstrations in High-Dimensional Musculoskeletal Models},
+	note = {Preprint.},
+	doi = {10.13140/RG.2.2.33187.22569/1},
+	abstract = {Humans excel at robust bipedal walking in complex natural environments. In each step, they adequately tune the interaction of biomechanical muscle dynamics and neuronal signals to be robust against uncertainties in ground conditions. However, it is still not fully understood how the nervous system resolves the musculoskeletal redundancy to solve the multi-objective control problem considering stability, robustness, and energy efﬁciency. In computer simulations, energy minimization has been shown to be a successful optimization target, reproducing natural walking with trajectory optimization or reﬂex-based control methods. However, these methods focus on particular motions at a time and the resulting controllers are limited when compensating for perturbations. In robotics, reinforcement learning (RL) methods recently achieved highly stable (and efﬁcient) locomotion on quadruped systems, but the generation of human-like walking with bipedal biomechanical models has required extensive use of expert data sets. This strong reliance on demonstrations often results in brittle policies and limits the application to new behaviors, especially considering the potential variety of movements for high-dimensional musculoskeletal models in 3D. Achieving natural locomotion with RL without sacriﬁcing its incredible robustness might pave the way for a novel approach to studying human walking in complex natural environments.},
+}
+
+
